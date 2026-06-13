@@ -1,5 +1,6 @@
 ﻿# Ayo The Pizza Here
-## Pentagon Pizza Tracker Discord Bot
+Pentagon Pizza Tracker Discord Bot
+Invite the official Ayo The Pizza Here bot with this link: https://discord.com/oauth2/authorize?client_id=1515318950962004130
 
 # How does it work?
 It uses PizzInt (https://pizzint.watch) to get the current "doughcon" level and out put it with an emoji/image.
