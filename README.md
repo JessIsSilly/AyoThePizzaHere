@@ -11,6 +11,8 @@ Run ```pip install -r requirements.txt``` to install requirements, then duplicat
 in the ```token = ""``` area. You can make the bot at https://discord.com/developers/applications.
 After that, run bot.py
 
-## Note:
-I, or the maintainers, am not affiliated with the people behind https://pizzint.watch. If anyone
+## Notes:
+* I, or the maintainers, am not affiliated with the people behind https://pizzint.watch. If anyone
 that works/has worked on PizzInt wants this taken down, please make an issue.
+
+* If you use/host this bot, please credit me in the bio with something like "Made by JessIsSilly on github"
