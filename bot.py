@@ -30,7 +30,7 @@ doughconFiveIconUrl = config.dcFive
 async def pizzaCheck(interaction: discord.Interaction):
     returnImageUrl = None
     doughconLevel = pizzInt.getDoughconLevel()
-    spikingPizzaPlaceInfo = None
+    spikingPizzaPlaceInfo = ""
     colourForEmbed = 0x04c164
 
     numOfSpikingPizzaPlaces = pizzInt.getActiveSpikingPizzaPlaces()
