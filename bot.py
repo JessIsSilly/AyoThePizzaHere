@@ -2,7 +2,12 @@
 from discord.ext import commands
 import datetime
 import pizzintApi as pizzInt
-import config
+
+try:
+    import config
+except ModuleNotFoundError:
+    print("[ERROR   ] Cannot find config.json!! Make sure config exists!!")
+    exit(1)
 
 token = config.token
 
