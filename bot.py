@@ -25,7 +25,7 @@ doughconFiveIconUrl = config.dcFive
 async def pizzaCheck(interaction: discord.Interaction):
     returnImageUrl = None
     doughconLevel = pizzInt.getDoughconLevel()
-    spikingPizzaPlaceInfo = "No spiking pizza places"
+    spikingPizzaPlaceInfo = None
     colourForEmbed = 0x04c164
 
     numOfSpikingPizzaPlaces = pizzInt.getActiveSpikingPizzaPlaces()
@@ -53,6 +53,8 @@ async def pizzaCheck(interaction: discord.Interaction):
                 spikingPizzaPlaceInfo = f"{pizzaPlace.split(":")[0].split(": current_popularity")[0]}, popularity: {pizzaPlace.split("current_popularity=")[1].split(",")[0]}, importance: {pizzaPlace.split("magnitude=")[1].split("'")[0]}\n"
             else:
                 spikingPizzaPlaceInfo = spikingPizzaPlaceInfo + f"{pizzaPlace.split(":")[0].split(": current_popularity")[0]}, popularity: {pizzaPlace.split("current_popularity=")[1].split(",")[0]}, importance: {pizzaPlace.split("magnitude=")[1].split("'")[0]}\n"
+    else:
+        spikingPizzaPlaceInfo = "No spiking pizza places"
 
     embed = discord.Embed(title="Doughcon",
                           description=f"Doughcon level: ***{doughconLevel}***\nSpiking Pizza Places: \n{spikingPizzaPlaceInfo}",
